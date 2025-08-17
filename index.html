@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing game&mdash;guess the number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <button class="btn btn--again">Again!</button>
+        <p class="number__range">&lt;Between 1 and 20 &gt;</p>
+      </div>
+      <main>
+        <section class="main">
+          <h1 class="main__heading">Guess My Number!</h1>
+          <div class="number-box">
+            <div class="target-number">?</div>
+          </div>
+          <div class="game-dashboard">
+            <div class="game-input">
+              <input type="number" id="input" />
+              <button class="btn btn--check">check</button>
+            </div>
+            <div class="score-board">
+              <p class="number-hint">Start guessing ....</p>
+              <p class="score">
+                <span class="emoji">💯</span>
+                score: <span class="score-num">20</span>
+              </p>
+              <p class="high-score">
+                <span class="emoji">🥇</span>
+                High score: <span class="highScore-num">0</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
